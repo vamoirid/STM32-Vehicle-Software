@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"batteryresistancepcb\startup_stm32f446xx.o"
+"batteryresistancepcb\system_stm32f4xx.o"
+"batteryresistancepcb\main.o"
+"batteryresistancepcb\stm32f4xx_hal_msp.o"
+"batteryresistancepcb\stm32f4xx_it.o"
+"batteryresistancepcb\stm32f4xx_hal_tim_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_dma.o"
+"batteryresistancepcb\stm32f4xx_hal_tim.o"
+"batteryresistancepcb\stm32f4xx_hal_gpio.o"
+"batteryresistancepcb\stm32f4xx_hal_flash.o"
+"batteryresistancepcb\stm32f4xx_hal_dma_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_pwr.o"
+"batteryresistancepcb\stm32f4xx_hal_cortex.o"
+"batteryresistancepcb\stm32f4xx_hal_flash_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_pwr_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_rcc_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_rcc.o"
+"batteryresistancepcb\stm32f4xx_hal_flash_ramfunc.o"
+"batteryresistancepcb\stm32f4xx_hal.o"
+"batteryresistancepcb\stm32f4xx_hal_dac_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_dac.o"
+"batteryresistancepcb\stm32f4xx_hal_adc_ex.o"
+"batteryresistancepcb\stm32f4xx_hal_adc.o"
+--library_type=microlib --strict --scatter "BatteryResistancePCB\BatteryResistancePCB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BatteryResistancePCB.map" -o BatteryResistancePCB\BatteryResistancePCB.axf
